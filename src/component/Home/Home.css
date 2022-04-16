@@ -1,0 +1,44 @@
+.parallax {
+    /* The image used */
+    background-image: url('https://healthcoach.stylemixthemes.com/wp-content/uploads/2015/09/slider_1_bg_01-min.jpg');
+  /* background-color: aqua; */
+    /* Full height */
+    height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+  }
+  .banner img{
+      width: 700px;
+      margin-top: 50px;
+  }
+  .banner-desc button,.card-button{
+      background-color: white;
+      color: rgb(0, 199, 0);
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 5px;
+      font-weight: 600;
+  }
+  .card-button{
+      border: 2px solid rgb(0, 199, 0);
+  }
+  .banner-desc button:hover{
+      background-color: rgb(0, 199, 0);
+      color: white;
+      border: 2px solid rgb(0, 199, 0);
+  }
+  .card-button:hover{
+      background-color: rgb(0, 199, 0);
+      color: white;
+      border: 2px solid rgb(0, 199, 0); 
+  }
