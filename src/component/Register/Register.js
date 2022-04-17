@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
@@ -9,6 +9,9 @@ import auth from '../../firebase.init';
 const Register = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const [
         createUserWithEmailAndPassword,
         user,
@@ -22,6 +25,9 @@ const Register = () => {
       const password = passwordRef.current.value;
       createUserWithEmailAndPassword(email, password);
     }
+    if (user) {
+      navigate(from, { replace: true });
+    }
     return (
         <div className="my-form container w-25">
             <h2>Please Register</h2>
@@ -34,16 +40,13 @@ const Register = () => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control ref={passwordRef} type="password" placeholder="Password" />
         </Form.Group>
-        <p>Already have an account? <Link to={'/login'}> Login now</Link></p>
+        <p>Already have an account? <Link style={{textDecoration:'none', color:'rgb(0, 160, 0)'}} to={'/login'}> Login now</Link></p>
         <button className="my-btn">submit</button>
       </Form>
     </div>

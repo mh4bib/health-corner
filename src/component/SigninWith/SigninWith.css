@@ -1,0 +1,11 @@
+.google-signin{
+    background-color: rgba(0, 199, 0, 0.386);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.google-signin:hover{
+    background-color: rgba(2, 234, 2, 0.601);
+}
