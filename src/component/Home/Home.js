@@ -23,46 +23,55 @@ const Home = () => {
         </div>
       </div>
       <div className="services container m-5 mx-auto">
-          <h2>Intensive Services</h2>
-      <CardGroup className="row">
-        <Card className="col-4 m-5 border border-success rounded">
-          <Card.Img variant="top" src={cardImg1} />
-          <Card.Body>
-            <Card.Title>Nutrition Plan</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-            <button className="card-button">check out</button>
-          </Card.Body>
-        </Card>
-        <Card className="col-4 m-5 border border-success rounded">
-          <Card.Img variant="top" src={cardImg2} />
-          <Card.Body>
-            <Card.Title>Exercise Program</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-            <button className="card-button">check out</button>
-          </Card.Body>
-        </Card>
-        <Card className="col-4 m-5 border border-success rounded">
-          <Card.Img variant="top" src={cardImg3} />
-          <Card.Body>
-            <Card.Title>Routine Program</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-            <button className="card-button">check out</button>
-          </Card.Body>
-        </Card>
-      </CardGroup>
+        <h2>Intensive Services</h2>
+        <CardGroup className="row">
+          <Card className="col-4 m-5 border border-success rounded">
+            <Card.Img variant="top" src={cardImg1} />
+            <Card.Body>
+              <Card.Title>Nutrition Plan</Card.Title>
+              <Card.Text>
+                Planning your own meals will allow you to see how much you're
+                actually eating. This also prevents you from overeating at
+                restaurants.
+              </Card.Text>
+              <h6 className="price">Only at $200</h6>
+              <button className="card-button">check out</button>
+            </Card.Body>
+          </Card>
+          <Card className="col-4 m-5 border border-success rounded">
+            <Card.Img variant="top" src={cardImg2} />
+            <Card.Body>
+              <Card.Title>Exercise Program</Card.Title>
+              <Card.Text>
+                For most healthy adults, the Department of Health and Human
+                Services recommends that you get at least 150 minutes of
+                moderate aerobic activity.
+              </Card.Text>
+              <h6 className="price">Only at $200</h6>
+              <button className="card-button">check out</button>
+            </Card.Body>
+          </Card>
+          <Card className="col-4 m-5 border border-success rounded">
+            <Card.Img variant="top" src={cardImg3} />
+            <Card.Body>
+              <Card.Title>Routine Program</Card.Title>
+              <Card.Text>
+                As a general goal, aim for at least 30 minutes of moderate
+                physical activity every day. If you want to lose weight,
+                maintain weight loss.
+              </Card.Text>
+              <h6 className="price">Only at $200</h6>
+              <button className="card-button">check out</button>
+            </Card.Body>
+          </Card>
+        </CardGroup>
       </div>
+
+      <footer>
+        <p>
+          copy right &copy; 2022 <strong>Health Corner</strong>
+        </p>
+      </footer>
     </div>
   );
 };

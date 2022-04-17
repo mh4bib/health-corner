@@ -42,3 +42,15 @@
       color: white;
       border: 2px solid rgb(0, 199, 0); 
   }
+  .price{
+      color: rgb(0, 199, 0);
+      margin-bottom: 10px;
+  }
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 0;
+}
