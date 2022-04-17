@@ -5,6 +5,7 @@ import cardImg1 from "../../1_-min-795x544.jpg";
 import cardImg2 from "../../2_-min-795x544.jpg";
 import cardImg3 from "../../3_-min-795x544.jpg";
 import { Card, CardGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
           <div className="banner-desc">
             <h1>All your solution here</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, aperiam?
+              Here I will help you to maintain a healthy nutrition plan, show
+              the right way of exercise and built a wonderful balanced routine
+              and so on...
             </p>
             <button>about me</button>
           </div>
@@ -35,7 +37,9 @@ const Home = () => {
                 restaurants.
               </Card.Text>
               <h6 className="price">Only at $200</h6>
-              <button className="card-button">check out</button>
+              <Link to="/checkouts">
+                <button className="card-button">check out</button>
+              </Link>
             </Card.Body>
           </Card>
           <Card className="col-4 m-5 border border-success rounded">
@@ -48,7 +52,9 @@ const Home = () => {
                 moderate aerobic activity.
               </Card.Text>
               <h6 className="price">Only at $200</h6>
-              <button className="card-button">check out</button>
+              <Link to="/checkouts">
+                <button className="card-button">check out</button>
+              </Link>
             </Card.Body>
           </Card>
           <Card className="col-4 m-5 border border-success rounded">
@@ -61,7 +67,9 @@ const Home = () => {
                 maintain weight loss.
               </Card.Text>
               <h6 className="price">Only at $200</h6>
-              <button className="card-button">check out</button>
+              <Link to="/checkouts">
+                <button className="card-button">check out</button>
+              </Link>
             </Card.Body>
           </Card>
         </CardGroup>
