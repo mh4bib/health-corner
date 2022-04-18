@@ -3,18 +3,18 @@
 see the [live preview of the project](https://health-corner-a79d1.web.app/).
 
 In this projects
-*There is a home page and a banner
-*Services section are below in the banner
-*The check out rout is a private route in this project
-*In blogs section, I answered the 3 question
-*You can know about me in about me section
+* There is a home page and a banner
+* Services section are below in the banner
+* The check out rout is a private route in this project
+* In blogs section, I answered the 3 question
+* You can know about me in about me section
 
 Frameworks used in the project
-*React router
-*React bootstrap
-*Firebase authentication system
-*Firebase hooks
-*Toastify and etc
+* React router
+* React bootstrap
+* Firebase authentication system
+* Firebase hooks
+* Toastify and etc
 
 # Getting Started with Create React App
 
