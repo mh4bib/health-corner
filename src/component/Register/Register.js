@@ -18,8 +18,8 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
-
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
+      const errorMesaage = <p style={{ color: "red" }}>{error?.message}</p>;
     const handleSubmit = event =>{
       event.preventDefault();
       const email = emailRef.current.value;
@@ -49,8 +49,9 @@ const Register = () => {
         </Form.Group>
         <p>Already have an account? <Link style={{textDecoration:'none', color:'rgb(0, 160, 0)'}} to={'/login'}> Login now</Link></p>
         <button className="my-btn">submit</button>
-        <SigninWith></SigninWith>
+        {errorMesaage}
       </Form>
+        <SigninWith></SigninWith>
     </div>
     );
 };
