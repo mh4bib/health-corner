@@ -16,8 +16,8 @@ const Header = () => {
             <h1>Health Corner</h1>
             <Link to={"/"}>HOME</Link>
             <Link to={"/checkouts"}>CHECK OUTS</Link>
-            <Link to={"/about"}>ABOUT</Link>
             <Link to={"/blogs"}>BLOGS</Link>
+            <Link to={"/aboutme"}>ABOUT</Link>
             {
                 user?
                 <button className='sign-out' onClick={handleSignOut}>LOG OUT</button>

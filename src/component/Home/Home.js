@@ -20,7 +20,9 @@ const Home = () => {
               the right way of exercise and built a wonderful balanced routine
               and so on...
             </p>
+            <Link to="/aboutme">
             <button>about me</button>
+            </Link>
           </div>
         </div>
       </div>
