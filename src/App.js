@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header/Header';
 import { Route, Routes } from 'react-router-dom';
@@ -9,6 +8,7 @@ import Register from './component/Register/Register';
 import RequireAuth from './component/Login/RequireAuth/RequireAuth';
 import Blogs from './component/Blogs/Blogs';
 import AboutMe from './component/AboutMe/AboutMe';
+import NotFound from './component/NotFound/NotFound';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );

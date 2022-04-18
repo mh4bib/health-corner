@@ -1,0 +1,8 @@
+.nothing-found{
+    background-color: rgba(0, 199, 0, 0.153);
+    color: rgb(0, 199, 0);
+    width: 20%;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+}

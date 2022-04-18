@@ -1,6 +1,7 @@
 .parallax {
     /* The image used */
-    background-image: url('https://healthcoach.stylemixthemes.com/wp-content/uploads/2015/09/slider_1_bg_01-min.jpg');
+    /* background-image: url(''); */
+    background-image: url('../../cover.jpg');
   /* background-color: aqua; */
     /* Full height */
     height: 600px; 
